@@ -15,7 +15,7 @@ class VideoOverlay extends React.Component {
     return(
       <div className="video">
           <center className="videoContainer">
-		        <video className='responsive' onEnded={this.props.onEnd} autoPlay ref="video">
+		        <video className='responsive' onEnded={this.props.onEnd} ref="video">
               <source src={this.props.video} type='video/mp4' />
             </video>
             <p className="text">{this.props.text}</p>
